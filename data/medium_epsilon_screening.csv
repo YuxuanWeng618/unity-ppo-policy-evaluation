@@ -1,0 +1,5 @@
+model,training_seed,epsilon,training_steps,games,wins,draws,losses,timeouts,falls_before_contact,falls_after_contact,simultaneous_falls,self_falls
+Eps020_s2,2,0.2,500028,100,96,2,2,1,1,2,1,3
+Eps015_s2,2,0.15,500002,100,85,2,13,2,1,12,0,13
+Eps020_s3,3,0.2,500007,100,87,1,12,0,3,10,1,13
+Eps015_s3,3,0.15,500027,100,83,0,17,0,7,10,0,17

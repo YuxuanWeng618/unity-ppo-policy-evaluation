@@ -1,0 +1,28 @@
+{
+  "start_seed_range": [
+    650000,
+    650199
+  ],
+  "games_per_policy": 200,
+  "unity_inference_seed": 20261031,
+  "inference_device": "CPU",
+  "environment": "Medium",
+  "timeout_is_subset_of_draws": true,
+  "models": {
+    "Eps020_s2": {
+      "seed": 2,
+      "training_steps": 500028,
+      "sha256": "25dfc8f1f1551e38b33e0a1d0cddb44da98372e5e440b4108bbbb15177578198"
+    },
+    "Medium_M2LR": {
+      "seed": 1,
+      "training_steps": 500008,
+      "sha256": "22df3862ea3ff4dd1f9900645f6f8ac5e055ced024e30fce16c98cc78f80c0fe"
+    },
+    "Medium_B0": {
+      "seed": 1,
+      "training_steps": 484736,
+      "sha256": "14f39773a8147e7edf99ae21d5e780c32afec14ef267e9c6946597d9ef0e631d"
+    }
+  }
+}

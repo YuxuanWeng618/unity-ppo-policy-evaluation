@@ -1,0 +1,4 @@
+model,training_seed,training_steps,games,wins,draws,losses,timeouts,win_rate_pct,falls_before_contact,falls_after_contact,simultaneous_falls,self_falls
+Eps020_s2,2,500028,200,190,4,6,4,95.0,5,1,0,6
+Medium_M2LR,1,500008,200,176,1,23,1,88.0,8,15,0,23
+Medium_B0,1,484736,200,78,2,120,0,39.0,78,44,2,122

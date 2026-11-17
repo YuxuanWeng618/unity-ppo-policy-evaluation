@@ -1,0 +1,288 @@
+{
+  "Simple_Final.onnx": {
+    "selected_experiment": "Simple_E7",
+    "run_id": "Team03_Simple_E7_seed1_round2_20261025",
+    "training_seed": 1,
+    "documented_training_settings": {
+      "batch_size": 256,
+      "learning_rate": 0.0003,
+      "hidden_units": 256,
+      "num_layers": 2
+    },
+    "sha256": "9bd26f6f27ceda3a773ebb51b182ce69636e5add931853403c0036287bfe656a",
+    "bytes": 290375,
+    "onnx_ir": 4,
+    "opset": [
+      9
+    ],
+    "inputs": [
+      {
+        "name": "obs_0",
+        "shape": [
+          "batch",
+          12
+        ]
+      },
+      {
+        "name": "action_masks",
+        "shape": [
+          "batch",
+          6
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "version_number",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "memory_size",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "discrete_actions",
+        "shape": [
+          "batch",
+          2
+        ]
+      },
+      {
+        "name": "discrete_action_output_shape",
+        "shape": [
+          1,
+          2
+        ]
+      }
+    ],
+    "initializer_shapes": [
+      [
+        1,
+        2
+      ],
+      [
+        256,
+        12
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        3,
+        256
+      ],
+      [
+        3,
+        256
+      ]
+    ]
+  },
+  "Medium_Final.onnx": {
+    "selected_experiment": "Eps020_s2",
+    "run_id": "Eps020_s2",
+    "training_seed": 2,
+    "documented_training_settings": {
+      "batch_size": 1024,
+      "learning_rate": 0.001,
+      "learning_rate_schedule": "linear",
+      "hidden_units": 256,
+      "num_layers": 2,
+      "epsilon": 0.2,
+      "beta": 0.005,
+      "gamma": 0.99,
+      "buffer_size": 10240
+    },
+    "sha256": "25dfc8f1f1551e38b33e0a1d0cddb44da98372e5e440b4108bbbb15177578198",
+    "bytes": 290376,
+    "onnx_ir": 4,
+    "opset": [
+      9
+    ],
+    "inputs": [
+      {
+        "name": "obs_0",
+        "shape": [
+          "batch",
+          12
+        ]
+      },
+      {
+        "name": "action_masks",
+        "shape": [
+          "batch",
+          6
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "version_number",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "memory_size",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "discrete_actions",
+        "shape": [
+          "batch",
+          2
+        ]
+      },
+      {
+        "name": "discrete_action_output_shape",
+        "shape": [
+          1,
+          2
+        ]
+      }
+    ],
+    "initializer_shapes": [
+      [
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1
+      ],
+      [
+        12
+      ],
+      [
+        256,
+        12
+      ],
+      [
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256
+      ],
+      [
+        3,
+        256
+      ],
+      [
+        3
+      ],
+      [
+        3,
+        256
+      ],
+      [
+        3
+      ],
+      [
+        12
+      ]
+    ],
+    "training_steps": 500028
+  },
+  "Hard_Final.onnx": {
+    "selected_experiment": "Hard_E9_seed2",
+    "run_id": "Team3_Hard_E9_seed2",
+    "training_seed": 2,
+    "documented_training_settings": {
+      "learning_rate": 0.0035,
+      "learning_rate_schedule": "linear",
+      "hidden_units": 128,
+      "num_layers": 2
+    },
+    "sha256": "d80a0c7281f951372876abde42d1707d97703078908533bb0be6d9cdf9096976",
+    "bytes": 83948,
+    "onnx_ir": 4,
+    "opset": [
+      9
+    ],
+    "inputs": [
+      {
+        "name": "obs_0",
+        "shape": [
+          "batch",
+          12
+        ]
+      },
+      {
+        "name": "action_masks",
+        "shape": [
+          "batch",
+          6
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "version_number",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "memory_size",
+        "shape": [
+          1
+        ]
+      },
+      {
+        "name": "discrete_actions",
+        "shape": [
+          "batch",
+          2
+        ]
+      },
+      {
+        "name": "discrete_action_output_shape",
+        "shape": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "deterministic_discrete_actions",
+        "shape": [
+          "Concatdeterministic_discrete_actions_dim_0",
+          2
+        ]
+      }
+    ],
+    "initializer_shapes": [
+      [
+        1,
+        2
+      ],
+      [
+        128,
+        12
+      ],
+      [
+        128,
+        128
+      ],
+      [
+        3,
+        128
+      ],
+      [
+        3,
+        128
+      ]
+    ]
+  }
+}
